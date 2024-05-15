@@ -159,13 +159,5 @@ services:
       KAFKA_CLUSTERS_0_KAFKACONNECT_0_NAME: connect
       KAFKA_CLUSTERS_0_KAFKACONNECT_0_ADDRESS: http://kafka-connect-avro:8083
       DYNAMIC_CONFIG_ENABLED: 'true'
-  
-  Pyspark:
-    image: jupyter/pyspark-notebook
-    container_name: pyspark
-    ports:
-      - "8888:8888"
-    volumes:
-      - ./spark_file:/home/jovyan 
-   
+
  
