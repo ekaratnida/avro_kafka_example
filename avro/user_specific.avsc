@@ -1,0 +1,43 @@
+{
+    "namespace": "confluent.io.examples.serialization.avro",
+    "name": "User",
+    "type": "record",
+    "fields": [
+        {
+            "name": "symbol",
+			"type": "string"
+        },
+        {
+            "name": "openPrice",
+            "type": "double"
+        },
+        {
+            "name": "highPrice",
+            "type": "double"
+        },
+		{
+            "name": "lowPrice",
+            "type": "double"
+        },
+		{
+            "name": "lastPrice",
+            "type": "double"
+        },
+		{
+            "name": "volume",
+            "type": "double"
+        },
+		{
+            "name": "openTime",
+            "type": "long"
+        },
+		{
+            "name": "closeTime",
+            "type": "long"
+        },
+		{
+            "name": "count",
+            "type": "long"
+        }
+    ]
+}
