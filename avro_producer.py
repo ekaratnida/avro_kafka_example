@@ -149,7 +149,7 @@ def main(args):
         # Serve on_delivery callbacks from previous calls to produce()
         
         data = requests.get(api).json()
-        print(str(data["symbol"]))
+        print(data)
 
         user = User(symbol=str(data["symbol"]), openPrice=float(data["openPrice"]), highPrice= float(data["highPrice"]),
                     lowPrice=float(data["lowPrice"]),lastPrice=float(data["lastPrice"]), volume=float(data["volume"]), 
@@ -181,4 +181,4 @@ if __name__ == '__main__':
     main(parser.parse_args())
 
 #Example
-# python avro_producer.py -b "localhost:9092" -t "btc" -s "http://localhost:8081"
+# python avro_producer.py -b "localhost:9092" -t "BTCUSDT" -s "http://localhost:8081"
