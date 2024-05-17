@@ -50,3 +50,5 @@ with open("btc_usdt.csv", "w") as f:
     for mytuple in result:
         csv_writer.writerow(mytuple)
 ```
+
+# 2. Build offline ML with Pycaret https://pycaret.gitbook.io/docs/get-started/quickstart
