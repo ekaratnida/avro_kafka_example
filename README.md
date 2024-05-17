@@ -6,6 +6,9 @@ Command
 2. curl -d @"sinkMysql_btc.json" -H "Content-Type: application/json" -X POST http://localhost:8083/connectors
 
 # Example of querying data from the mysql running inside a docker
+
+## pip install mysqlclient
+
 ```python
 import MySQLdb
 
