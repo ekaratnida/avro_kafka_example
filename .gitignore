@@ -1,2 +1,4 @@
-/cat_boost_info
-/logs 
+/catboost_info
+logs.log
+*.pkl
+/.ipynb_checkpoints
