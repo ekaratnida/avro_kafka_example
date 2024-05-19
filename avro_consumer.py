@@ -138,7 +138,10 @@ def main(args):
                               user.closeTime, 
                               user.count))
                 
-            #Create a dataframe for the consuming data to feed into the ML model. 
+            # Create a dataframe for the consuming data to feed into the ML model.
+            # For example
+            #   import pandas as pd
+            #   df = pd.DataFrame.from_dict(data) 
                 
         except KeyboardInterrupt:
             break
