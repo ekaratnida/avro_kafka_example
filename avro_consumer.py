@@ -26,6 +26,9 @@ from confluent_kafka.serialization import SerializationContext, MessageField
 from confluent_kafka.schema_registry import SchemaRegistryClient
 from confluent_kafka.schema_registry.avro import AvroDeserializer
 from time import sleep
+import pandas as pd
+from pycaret.regression import load_model, predict_model
+from sklearn.metrics import mean_squared_error
 
 class User(object):
     """
@@ -119,7 +122,7 @@ def main(args):
                 continue
 
             user = avro_deserializer(msg.value(), SerializationContext(msg.topic(), MessageField.VALUE))
-            if user is not None:
+            '''if user is not None:
                 print("User record {}: symbol: {}"
                       "\topenPrice: {}"
                       "\thighPrice: {}"
@@ -127,7 +130,8 @@ def main(args):
                       "\tvolume: {}"
                       "\topenTime: {}"
                       "\tcloseTime: {}"
-                      "\tcount: {}\n"
+                      "\tcount: {}"
+                      "\tlastPrice: {}\n"
                       .format(msg.key(), 
                               user.symbol,
                               user.openPrice,
@@ -136,17 +140,29 @@ def main(args):
                               user.volume, 
                               user.openTime, 
                               user.closeTime, 
-                              user.count))
+                              user.count,
+                              user.lastPrice)
+                    )'''
                 
             # Create a dataframe for the consuming data to feed into the ML model.
             # For example
-            #   import pandas as pd
-            #   df = pd.DataFrame.from_dict(data) 
-                
+            
+            data = {'volume':user.volume, 'lowPrice':user.lowPrice,
+                    'highPrice':user.highPrice,'count':user.count,
+                    'openPrice':user.openPrice}
+            
+            df = pd.DataFrame(data,index=[user.closeTime])
+          
+            saved_lr = load_model('model_et')
+            predictions = predict_model(saved_lr, data=df)
+            #print(type(predictions))
+            print("Predicted", predictions.iloc[0]['prediction_label']," VS Actual=",user.lastPrice)
+            print(mean_squared_error([user.lastPrice] , [predictions.iloc[0]['prediction_label']] ) )
+
         except KeyboardInterrupt:
             break
 
-        sleep(2)
+        sleep(3)
 
     consumer.close()
 
@@ -168,4 +184,4 @@ if __name__ == '__main__':
 
 
 #Example
-# python avro_consumer.py -b "localhost:9092" -t "BTCUSDT" -s "http://localhost:8081"
+# python avro_consumer.py -b "localhost:9092" -s "http://localhost:8081" -t "BTCUSDT" -g "btc"

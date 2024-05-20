@@ -54,3 +54,5 @@ with open("btc_usdt.csv", "w") as f:
 # 2. Build offline ML with Pycaret
 
 - https://pycaret.gitbook.io/docs/get-started/quickstart
+- More example: https://pycaret.gitbook.io/docs/learn-pycaret/official-blog/predicting-crashes-in-gold-prices-using-pycaret
+

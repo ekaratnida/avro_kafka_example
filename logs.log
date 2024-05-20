@@ -5474,3 +5474,1901 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                 ('trained_model',
                  RandomForestRegressor(n_jobs=-1, random_state=123))])
 2024-05-19 06:32:42,137:INFO:save_model() successfully completed......................................
+2024-05-21 04:42:43,766:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 04:42:43,767:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 04:42:43,767:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 04:42:43,767:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 04:42:46,956:INFO:PyCaret RegressionExperiment
+2024-05-21 04:42:46,956:INFO:Logging name: reg-default-name
+2024-05-21 04:42:46,957:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-05-21 04:42:46,957:INFO:version 3.3.2
+2024-05-21 04:42:46,957:INFO:Initializing setup()
+2024-05-21 04:42:46,957:INFO:self.USI: c20b
+2024-05-21 04:42:46,957:INFO:self._variable_keys: {'fold_generator', 'transform_target_param', 'X_train', '_available_plots', 'exp_id', 'exp_name_log', 'y_test', 'X', 'y_train', 'gpu_param', 'logging_param', 'fold_groups_param', 'gpu_n_jobs_param', '_ml_usecase', 'fold_shuffle_param', 'USI', 'seed', 'target_param', 'idx', 'pipeline', 'X_test', 'data', 'html_param', 'log_plots_param', 'n_jobs_param', 'y', 'memory'}
+2024-05-21 04:42:46,957:INFO:Checking environment
+2024-05-21 04:42:46,957:INFO:python_version: 3.9.12
+2024-05-21 04:42:46,957:INFO:python_build: ('main', 'Mar 24 2022 23:17:03')
+2024-05-21 04:42:46,957:INFO:machine: AMD64
+2024-05-21 04:42:46,957:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-21 04:42:46,969:INFO:Memory: svmem(total=16910155776, available=3082350592, percent=81.8, used=13827805184, free=3082350592)
+2024-05-21 04:42:46,969:INFO:Physical Core: 4
+2024-05-21 04:42:46,969:INFO:Logical Core: 8
+2024-05-21 04:42:46,969:INFO:Checking libraries
+2024-05-21 04:42:46,969:INFO:System:
+2024-05-21 04:42:46,969:INFO:    python: 3.9.12 | packaged by conda-forge | (main, Mar 24 2022, 23:17:03) [MSC v.1929 64 bit (AMD64)]
+2024-05-21 04:42:46,969:INFO:executable: c:\Program Files\Orange\python.exe
+2024-05-21 04:42:46,969:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-21 04:42:46,970:INFO:PyCaret required dependencies:
+2024-05-21 04:42:47,134:INFO:                 pip: 22.3.1
+2024-05-21 04:42:47,134:INFO:          setuptools: 65.5.1
+2024-05-21 04:42:47,134:INFO:             pycaret: 3.3.2
+2024-05-21 04:42:47,134:INFO:             IPython: 8.4.0
+2024-05-21 04:42:47,135:INFO:          ipywidgets: 7.7.1
+2024-05-21 04:42:47,135:INFO:                tqdm: 4.66.2
+2024-05-21 04:42:47,135:INFO:               numpy: 1.23.5
+2024-05-21 04:42:47,135:INFO:              pandas: 1.4.4
+2024-05-21 04:42:47,135:INFO:              jinja2: 3.1.2
+2024-05-21 04:42:47,135:INFO:               scipy: 1.9.3
+2024-05-21 04:42:47,135:INFO:              joblib: 1.2.0
+2024-05-21 04:42:47,135:INFO:             sklearn: 1.1.3
+2024-05-21 04:42:47,135:INFO:                pyod: 1.1.3
+2024-05-21 04:42:47,135:INFO:            imblearn: 0.12.2
+2024-05-21 04:42:47,135:INFO:   category_encoders: 2.6.3
+2024-05-21 04:42:47,135:INFO:            lightgbm: 4.3.0
+2024-05-21 04:42:47,135:INFO:               numba: 0.59.1
+2024-05-21 04:42:47,136:INFO:            requests: 2.28.1
+2024-05-21 04:42:47,136:INFO:          matplotlib: 3.6.2
+2024-05-21 04:42:47,136:INFO:          scikitplot: 0.3.7
+2024-05-21 04:42:47,136:INFO:         yellowbrick: 1.5
+2024-05-21 04:42:47,136:INFO:              plotly: 5.11.0
+2024-05-21 04:42:47,136:INFO:    plotly-resampler: Not installed
+2024-05-21 04:42:47,136:INFO:             kaleido: 0.2.1
+2024-05-21 04:42:47,136:INFO:           schemdraw: 0.15
+2024-05-21 04:42:47,136:INFO:         statsmodels: 0.14.2
+2024-05-21 04:42:47,136:INFO:              sktime: 0.26.0
+2024-05-21 04:42:47,136:INFO:               tbats: 1.1.3
+2024-05-21 04:42:47,136:INFO:            pmdarima: 2.0.4
+2024-05-21 04:42:47,136:INFO:              psutil: 5.9.4
+2024-05-21 04:42:47,136:INFO:          markupsafe: 2.1.2
+2024-05-21 04:42:47,136:INFO:             pickle5: Not installed
+2024-05-21 04:42:47,136:INFO:         cloudpickle: 3.0.0
+2024-05-21 04:42:47,136:INFO:         deprecation: 2.1.0
+2024-05-21 04:42:47,136:INFO:              xxhash: 3.4.1
+2024-05-21 04:42:47,136:INFO:           wurlitzer: Not installed
+2024-05-21 04:42:47,136:INFO:PyCaret optional dependencies:
+2024-05-21 04:42:47,339:INFO:                shap: Not installed
+2024-05-21 04:42:47,339:INFO:           interpret: Not installed
+2024-05-21 04:42:47,339:INFO:                umap: Not installed
+2024-05-21 04:42:47,339:INFO:     ydata_profiling: Not installed
+2024-05-21 04:42:47,339:INFO:  explainerdashboard: Not installed
+2024-05-21 04:42:47,339:INFO:             autoviz: Not installed
+2024-05-21 04:42:47,339:INFO:           fairlearn: Not installed
+2024-05-21 04:42:47,339:INFO:          deepchecks: Not installed
+2024-05-21 04:42:47,340:INFO:             xgboost: 1.7.1
+2024-05-21 04:42:47,340:INFO:            catboost: 1.1.1
+2024-05-21 04:42:47,340:INFO:              kmodes: Not installed
+2024-05-21 04:42:47,340:INFO:             mlxtend: Not installed
+2024-05-21 04:42:47,340:INFO:       statsforecast: Not installed
+2024-05-21 04:42:47,340:INFO:        tune_sklearn: Not installed
+2024-05-21 04:42:47,340:INFO:                 ray: Not installed
+2024-05-21 04:42:47,340:INFO:            hyperopt: Not installed
+2024-05-21 04:42:47,340:INFO:              optuna: Not installed
+2024-05-21 04:42:47,340:INFO:               skopt: Not installed
+2024-05-21 04:42:47,340:INFO:              mlflow: Not installed
+2024-05-21 04:42:47,340:INFO:              gradio: Not installed
+2024-05-21 04:42:47,340:INFO:             fastapi: Not installed
+2024-05-21 04:42:47,340:INFO:             uvicorn: Not installed
+2024-05-21 04:42:47,340:INFO:              m2cgen: Not installed
+2024-05-21 04:42:47,340:INFO:           evidently: Not installed
+2024-05-21 04:42:47,340:INFO:               fugue: Not installed
+2024-05-21 04:42:47,340:INFO:           streamlit: Not installed
+2024-05-21 04:42:47,340:INFO:             prophet: Not installed
+2024-05-21 04:42:47,341:INFO:None
+2024-05-21 04:42:47,341:INFO:Set up data.
+2024-05-21 04:42:47,356:INFO:Set up folding strategy.
+2024-05-21 04:42:47,356:INFO:Set up train/test split.
+2024-05-21 04:42:47,364:INFO:Set up index.
+2024-05-21 04:42:47,366:INFO:Assigning column types.
+2024-05-21 04:42:47,370:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-21 04:42:47,370:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-21 04:42:47,375:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-21 04:42:47,381:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:47,456:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:47,513:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:47,514:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:47,518:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:48,354:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,359:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,365:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,422:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,465:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,466:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:48,468:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:48,468:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-05-21 04:42:48,473:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,478:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,536:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,586:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,586:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:48,589:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:48,597:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,604:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,670:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,714:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,716:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:48,718:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:48,719:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-05-21 04:42:48,733:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,797:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,839:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,840:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:48,843:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:48,853:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-21 04:42:48,948:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,015:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,016:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,018:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,019:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-05-21 04:42:49,105:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,160:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,161:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,165:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,247:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,297:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,297:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,301:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,304:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-21 04:42:49,394:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,467:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,472:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,582:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-21 04:42:49,636:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,638:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,639:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-05-21 04:42:49,772:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,775:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,905:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:49,907:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:49,910:INFO:Preparing preprocessing pipeline...
+2024-05-21 04:42:49,910:INFO:Set up simple imputation.
+2024-05-21 04:42:49,950:INFO:Finished creating preprocessing pipeline.
+2024-05-21 04:42:49,955:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2024-05-21 04:42:49,955:INFO:Creating final display dataframe.
+2024-05-21 04:42:50,045:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target         lastPrice
+2                   Target type        Regression
+3           Original data shape         (9563, 8)
+4        Transformed data shape         (9563, 6)
+5   Transformed train set shape         (6694, 6)
+6    Transformed test set shape         (2869, 6)
+7               Ignore features                 3
+8              Numeric features                 5
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13               Fold Generator             KFold
+14                  Fold Number                10
+15                     CPU Jobs                -1
+16                      Use GPU             False
+17               Log Experiment             False
+18              Experiment Name  reg-default-name
+19                          USI              c20b
+2024-05-21 04:42:50,199:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:50,202:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:50,340:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-05-21 04:42:50,343:INFO:Soft dependency imported: catboost: 1.1.1
+2024-05-21 04:42:50,344:INFO:setup() successfully completed in 3.39s...............
+2024-05-21 04:43:27,409:INFO:Initializing create_model()
+2024-05-21 04:43:27,409:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000012D0DAFB9A0>, estimator=et, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-21 04:43:27,409:INFO:Checking exceptions
+2024-05-21 04:43:27,460:INFO:Importing libraries
+2024-05-21 04:43:27,460:INFO:Copying training dataset
+2024-05-21 04:43:27,471:INFO:Defining folds
+2024-05-21 04:43:27,471:INFO:Declaring metric variables
+2024-05-21 04:43:27,478:INFO:Importing untrained model
+2024-05-21 04:43:27,486:INFO:Extra Trees Regressor Imported successfully
+2024-05-21 04:43:27,497:INFO:Starting cross validation
+2024-05-21 04:43:27,517:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-21 04:43:42,105:INFO:Calculating mean and std
+2024-05-21 04:43:42,110:INFO:Creating metrics dataframe
+2024-05-21 04:43:42,125:INFO:Finalizing model
+2024-05-21 04:43:42,584:INFO:Uploading results into container
+2024-05-21 04:43:42,586:INFO:Uploading model into container now
+2024-05-21 04:43:42,612:INFO:_master_model_container: 1
+2024-05-21 04:43:42,612:INFO:_display_container: 2
+2024-05-21 04:43:42,616:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-05-21 04:43:42,616:INFO:create_model() successfully completed......................................
+2024-05-21 04:44:01,215:INFO:Initializing save_model()
+2024-05-21 04:44:01,216:INFO:save_model(model=ExtraTreesRegressor(n_jobs=-1, random_state=123), model_name=model_et, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-05-21 04:44:01,216:INFO:Adding model into prep_pipe
+2024-05-21 04:44:01,333:INFO:model_et.pkl saved in current working directory
+2024-05-21 04:44:01,340:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2024-05-21 04:44:01,340:INFO:save_model() successfully completed......................................
+2024-05-21 04:44:03,878:INFO:Initializing create_model()
+2024-05-21 04:44:03,879:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000012D0DAFB9A0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-21 04:44:03,879:INFO:Checking exceptions
+2024-05-21 04:44:03,931:INFO:Importing libraries
+2024-05-21 04:44:03,932:INFO:Copying training dataset
+2024-05-21 04:44:03,944:INFO:Defining folds
+2024-05-21 04:44:03,945:INFO:Declaring metric variables
+2024-05-21 04:44:03,952:INFO:Importing untrained model
+2024-05-21 04:44:03,961:INFO:Random Forest Regressor Imported successfully
+2024-05-21 04:44:03,973:INFO:Starting cross validation
+2024-05-21 04:44:03,975:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-21 04:44:10,526:INFO:Calculating mean and std
+2024-05-21 04:44:10,530:INFO:Creating metrics dataframe
+2024-05-21 04:44:10,545:INFO:Finalizing model
+2024-05-21 04:44:11,414:INFO:Uploading results into container
+2024-05-21 04:44:11,417:INFO:Uploading model into container now
+2024-05-21 04:44:11,436:INFO:_master_model_container: 2
+2024-05-21 04:44:11,437:INFO:_display_container: 3
+2024-05-21 04:44:11,437:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2024-05-21 04:44:11,438:INFO:create_model() successfully completed......................................
+2024-05-21 04:44:11,591:INFO:Initializing save_model()
+2024-05-21 04:44:11,591:INFO:save_model(model=RandomForestRegressor(n_jobs=-1, random_state=123), model_name=model_rf, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-05-21 04:44:11,591:INFO:Adding model into prep_pipe
+2024-05-21 04:44:11,760:INFO:model_rf.pkl saved in current working directory
+2024-05-21 04:44:11,772:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 RandomForestRegressor(n_jobs=-1, random_state=123))])
+2024-05-21 04:44:11,772:INFO:save_model() successfully completed......................................
+2024-05-21 05:30:39,105:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:30:39,106:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:30:39,106:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:30:39,106:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:30:39,339:INFO:Initializing load_model()
+2024-05-21 05:30:39,339:INFO:load_model(model_name=model_et.pkl, platform=None, authentication=None, verbose=True)
+2024-05-21 05:31:25,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:31:25,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:31:25,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:31:25,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 05:31:26,063:INFO:Initializing load_model()
+2024-05-21 05:31:26,063:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:03:54,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:03:54,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:03:54,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:03:54,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:03:54,499:INFO:Initializing load_model()
+2024-05-21 06:03:54,499:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:03:54,793:INFO:Initializing predict_model()
+2024-05-21 06:03:54,793:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000257B14BB100>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000257B1694C10>)
+2024-05-21 06:03:54,793:INFO:Checking exceptions
+2024-05-21 06:03:54,793:INFO:Preloading libraries
+2024-05-21 06:05:02,191:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:05:02,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:05:02,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:05:02,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:05:02,399:INFO:Initializing load_model()
+2024-05-21 06:05:02,400:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:02,721:INFO:Initializing predict_model()
+2024-05-21 06:05:02,722:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021932E5BE80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021932E52C10>)
+2024-05-21 06:05:02,722:INFO:Checking exceptions
+2024-05-21 06:05:02,722:INFO:Preloading libraries
+2024-05-21 06:05:02,725:INFO:Set up data.
+2024-05-21 06:05:02,732:INFO:Set up index.
+2024-05-21 06:05:03,881:INFO:Initializing load_model()
+2024-05-21 06:05:03,882:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:04,058:INFO:Initializing predict_model()
+2024-05-21 06:05:04,058:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002193A3A6C70>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021944351820>)
+2024-05-21 06:05:04,058:INFO:Checking exceptions
+2024-05-21 06:05:04,058:INFO:Preloading libraries
+2024-05-21 06:05:04,058:INFO:Set up data.
+2024-05-21 06:05:04,060:INFO:Set up index.
+2024-05-21 06:05:05,191:INFO:Initializing load_model()
+2024-05-21 06:05:05,191:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:05,374:INFO:Initializing predict_model()
+2024-05-21 06:05:05,374:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021932C7B520>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021932E52C10>)
+2024-05-21 06:05:05,375:INFO:Checking exceptions
+2024-05-21 06:05:05,375:INFO:Preloading libraries
+2024-05-21 06:05:05,375:INFO:Set up data.
+2024-05-21 06:05:05,377:INFO:Set up index.
+2024-05-21 06:05:06,500:INFO:Initializing load_model()
+2024-05-21 06:05:06,500:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:06,670:INFO:Initializing predict_model()
+2024-05-21 06:05:06,670:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021933B75790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021944351820>)
+2024-05-21 06:05:06,670:INFO:Checking exceptions
+2024-05-21 06:05:06,670:INFO:Preloading libraries
+2024-05-21 06:05:06,670:INFO:Set up data.
+2024-05-21 06:05:06,672:INFO:Set up index.
+2024-05-21 06:05:07,809:INFO:Initializing load_model()
+2024-05-21 06:05:07,809:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:08,015:INFO:Initializing predict_model()
+2024-05-21 06:05:08,016:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021944330D60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021932E52C10>)
+2024-05-21 06:05:08,016:INFO:Checking exceptions
+2024-05-21 06:05:08,016:INFO:Preloading libraries
+2024-05-21 06:05:08,016:INFO:Set up data.
+2024-05-21 06:05:08,019:INFO:Set up index.
+2024-05-21 06:05:09,182:INFO:Initializing load_model()
+2024-05-21 06:05:09,182:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:09,347:INFO:Initializing predict_model()
+2024-05-21 06:05:09,347:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021932C7B520>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021944351820>)
+2024-05-21 06:05:09,347:INFO:Checking exceptions
+2024-05-21 06:05:09,347:INFO:Preloading libraries
+2024-05-21 06:05:09,348:INFO:Set up data.
+2024-05-21 06:05:09,350:INFO:Set up index.
+2024-05-21 06:05:10,485:INFO:Initializing load_model()
+2024-05-21 06:05:10,486:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:05:10,698:INFO:Initializing predict_model()
+2024-05-21 06:05:10,698:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000218E7FCA040>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021932E52C10>)
+2024-05-21 06:05:10,699:INFO:Checking exceptions
+2024-05-21 06:05:10,699:INFO:Preloading libraries
+2024-05-21 06:05:10,699:INFO:Set up data.
+2024-05-21 06:05:10,704:INFO:Set up index.
+2024-05-21 06:07:03,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:07:03,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:07:03,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:07:03,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:07:03,781:INFO:Initializing load_model()
+2024-05-21 06:07:03,782:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:04,070:INFO:Initializing predict_model()
+2024-05-21 06:07:04,070:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A3E525F40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A3A44D0D0>)
+2024-05-21 06:07:04,070:INFO:Checking exceptions
+2024-05-21 06:07:04,070:INFO:Preloading libraries
+2024-05-21 06:07:04,070:INFO:Set up data.
+2024-05-21 06:07:04,073:INFO:Set up index.
+2024-05-21 06:07:05,184:INFO:Initializing load_model()
+2024-05-21 06:07:05,184:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:05,363:INFO:Initializing predict_model()
+2024-05-21 06:07:05,363:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002399DC63370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A3A44D0D0>)
+2024-05-21 06:07:05,363:INFO:Checking exceptions
+2024-05-21 06:07:05,363:INFO:Preloading libraries
+2024-05-21 06:07:05,363:INFO:Set up data.
+2024-05-21 06:07:05,366:INFO:Set up index.
+2024-05-21 06:07:06,490:INFO:Initializing load_model()
+2024-05-21 06:07:06,490:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:06,649:INFO:Initializing predict_model()
+2024-05-21 06:07:06,649:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A3355EEE0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A3A44D0D0>)
+2024-05-21 06:07:06,649:INFO:Checking exceptions
+2024-05-21 06:07:06,649:INFO:Preloading libraries
+2024-05-21 06:07:06,649:INFO:Set up data.
+2024-05-21 06:07:06,651:INFO:Set up index.
+2024-05-21 06:07:07,780:INFO:Initializing load_model()
+2024-05-21 06:07:07,780:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:07,947:INFO:Initializing predict_model()
+2024-05-21 06:07:07,948:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A44521910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A3A44D0D0>)
+2024-05-21 06:07:07,948:INFO:Checking exceptions
+2024-05-21 06:07:07,948:INFO:Preloading libraries
+2024-05-21 06:07:07,948:INFO:Set up data.
+2024-05-21 06:07:07,951:INFO:Set up index.
+2024-05-21 06:07:09,090:INFO:Initializing load_model()
+2024-05-21 06:07:09,090:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:09,313:INFO:Initializing predict_model()
+2024-05-21 06:07:09,313:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002399DC63370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:09,313:INFO:Checking exceptions
+2024-05-21 06:07:09,313:INFO:Preloading libraries
+2024-05-21 06:07:09,314:INFO:Set up data.
+2024-05-21 06:07:09,319:INFO:Set up index.
+2024-05-21 06:07:10,442:INFO:Initializing load_model()
+2024-05-21 06:07:10,443:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:10,613:INFO:Initializing predict_model()
+2024-05-21 06:07:10,615:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A44424040>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:10,615:INFO:Checking exceptions
+2024-05-21 06:07:10,615:INFO:Preloading libraries
+2024-05-21 06:07:10,615:INFO:Set up data.
+2024-05-21 06:07:10,618:INFO:Set up index.
+2024-05-21 06:07:11,749:INFO:Initializing load_model()
+2024-05-21 06:07:11,749:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:11,927:INFO:Initializing predict_model()
+2024-05-21 06:07:11,927:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A44521E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:11,927:INFO:Checking exceptions
+2024-05-21 06:07:11,927:INFO:Preloading libraries
+2024-05-21 06:07:11,928:INFO:Set up data.
+2024-05-21 06:07:11,930:INFO:Set up index.
+2024-05-21 06:07:13,052:INFO:Initializing load_model()
+2024-05-21 06:07:13,053:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:13,227:INFO:Initializing predict_model()
+2024-05-21 06:07:13,228:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002399DC63370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:13,228:INFO:Checking exceptions
+2024-05-21 06:07:13,228:INFO:Preloading libraries
+2024-05-21 06:07:13,228:INFO:Set up data.
+2024-05-21 06:07:13,232:INFO:Set up index.
+2024-05-21 06:07:14,343:INFO:Initializing load_model()
+2024-05-21 06:07:14,343:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:14,510:INFO:Initializing predict_model()
+2024-05-21 06:07:14,511:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A3355EEE0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:14,511:INFO:Checking exceptions
+2024-05-21 06:07:14,511:INFO:Preloading libraries
+2024-05-21 06:07:14,511:INFO:Set up data.
+2024-05-21 06:07:14,513:INFO:Set up index.
+2024-05-21 06:07:15,632:INFO:Initializing load_model()
+2024-05-21 06:07:15,632:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:07:15,832:INFO:Initializing predict_model()
+2024-05-21 06:07:15,833:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A44521E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023A44526280>)
+2024-05-21 06:07:15,833:INFO:Checking exceptions
+2024-05-21 06:07:15,833:INFO:Preloading libraries
+2024-05-21 06:07:15,833:INFO:Set up data.
+2024-05-21 06:07:15,835:INFO:Set up index.
+2024-05-21 06:09:13,244:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:13,245:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:13,245:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:13,245:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:13,471:INFO:Initializing load_model()
+2024-05-21 06:09:13,471:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:09:13,764:INFO:Initializing predict_model()
+2024-05-21 06:09:13,765:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022EB72C55E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022EB72D0040>)
+2024-05-21 06:09:13,765:INFO:Checking exceptions
+2024-05-21 06:09:13,765:INFO:Preloading libraries
+2024-05-21 06:09:13,765:INFO:Set up data.
+2024-05-21 06:09:13,768:INFO:Set up index.
+2024-05-21 06:09:31,206:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:31,206:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:31,206:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:31,206:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:09:58,466:INFO:Initializing load_model()
+2024-05-21 06:09:58,466:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:09:58,733:INFO:Initializing predict_model()
+2024-05-21 06:09:58,734:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000203380555E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:09:58,734:INFO:Checking exceptions
+2024-05-21 06:09:58,734:INFO:Preloading libraries
+2024-05-21 06:09:58,734:INFO:Set up data.
+2024-05-21 06:09:58,736:INFO:Set up index.
+2024-05-21 06:10:01,847:INFO:Initializing load_model()
+2024-05-21 06:10:01,847:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:01,987:INFO:Initializing predict_model()
+2024-05-21 06:10:01,987:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000202DB882340>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:01,987:INFO:Checking exceptions
+2024-05-21 06:10:01,987:INFO:Preloading libraries
+2024-05-21 06:10:01,987:INFO:Set up data.
+2024-05-21 06:10:01,989:INFO:Set up index.
+2024-05-21 06:10:05,098:INFO:Initializing load_model()
+2024-05-21 06:10:05,098:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:05,261:INFO:Initializing predict_model()
+2024-05-21 06:10:05,261:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020342137A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:05,261:INFO:Checking exceptions
+2024-05-21 06:10:05,261:INFO:Preloading libraries
+2024-05-21 06:10:05,262:INFO:Set up data.
+2024-05-21 06:10:05,264:INFO:Set up index.
+2024-05-21 06:10:08,392:INFO:Initializing load_model()
+2024-05-21 06:10:08,392:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:08,539:INFO:Initializing predict_model()
+2024-05-21 06:10:08,539:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020342125850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:08,539:INFO:Checking exceptions
+2024-05-21 06:10:08,539:INFO:Preloading libraries
+2024-05-21 06:10:08,539:INFO:Set up data.
+2024-05-21 06:10:08,541:INFO:Set up index.
+2024-05-21 06:10:11,667:INFO:Initializing load_model()
+2024-05-21 06:10:11,667:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:11,800:INFO:Initializing predict_model()
+2024-05-21 06:10:11,800:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002033805F8B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:11,800:INFO:Checking exceptions
+2024-05-21 06:10:11,800:INFO:Preloading libraries
+2024-05-21 06:10:11,801:INFO:Set up data.
+2024-05-21 06:10:11,803:INFO:Set up index.
+2024-05-21 06:10:14,911:INFO:Initializing load_model()
+2024-05-21 06:10:14,911:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:15,052:INFO:Initializing predict_model()
+2024-05-21 06:10:15,053:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020342137490>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:15,053:INFO:Checking exceptions
+2024-05-21 06:10:15,053:INFO:Preloading libraries
+2024-05-21 06:10:15,053:INFO:Set up data.
+2024-05-21 06:10:15,057:INFO:Set up index.
+2024-05-21 06:10:18,176:INFO:Initializing load_model()
+2024-05-21 06:10:18,176:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:18,413:INFO:Initializing predict_model()
+2024-05-21 06:10:18,413:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002033805F8B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:18,413:INFO:Checking exceptions
+2024-05-21 06:10:18,413:INFO:Preloading libraries
+2024-05-21 06:10:18,414:INFO:Set up data.
+2024-05-21 06:10:18,419:INFO:Set up index.
+2024-05-21 06:10:21,543:INFO:Initializing load_model()
+2024-05-21 06:10:21,543:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:21,691:INFO:Initializing predict_model()
+2024-05-21 06:10:21,692:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020342137A00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:21,692:INFO:Checking exceptions
+2024-05-21 06:10:21,692:INFO:Preloading libraries
+2024-05-21 06:10:21,692:INFO:Set up data.
+2024-05-21 06:10:21,695:INFO:Set up index.
+2024-05-21 06:10:24,814:INFO:Initializing load_model()
+2024-05-21 06:10:24,814:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:10:24,972:INFO:Initializing predict_model()
+2024-05-21 06:10:24,972:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002033805FE80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020338060040>)
+2024-05-21 06:10:24,972:INFO:Checking exceptions
+2024-05-21 06:10:24,972:INFO:Preloading libraries
+2024-05-21 06:10:24,972:INFO:Set up data.
+2024-05-21 06:10:24,975:INFO:Set up index.
+2024-05-21 06:31:51,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:31:51,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:31:51,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:31:51,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:31:51,354:INFO:Initializing load_model()
+2024-05-21 06:31:51,354:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:31:51,681:INFO:Initializing predict_model()
+2024-05-21 06:31:51,681:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1F46A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:31:51,681:INFO:Checking exceptions
+2024-05-21 06:31:51,681:INFO:Preloading libraries
+2024-05-21 06:31:51,681:INFO:Set up data.
+2024-05-21 06:31:51,685:INFO:Set up index.
+2024-05-21 06:31:54,824:INFO:Initializing load_model()
+2024-05-21 06:31:54,825:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:31:54,990:INFO:Initializing predict_model()
+2024-05-21 06:31:54,990:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000219A7A23370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:31:54,990:INFO:Checking exceptions
+2024-05-21 06:31:54,990:INFO:Preloading libraries
+2024-05-21 06:31:54,990:INFO:Set up data.
+2024-05-21 06:31:54,992:INFO:Set up index.
+2024-05-21 06:31:58,122:INFO:Initializing load_model()
+2024-05-21 06:31:58,122:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:31:58,326:INFO:Initializing predict_model()
+2024-05-21 06:31:58,327:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1F4670>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:31:58,327:INFO:Checking exceptions
+2024-05-21 06:31:58,327:INFO:Preloading libraries
+2024-05-21 06:31:58,327:INFO:Set up data.
+2024-05-21 06:31:58,331:INFO:Set up index.
+2024-05-21 06:32:01,463:INFO:Initializing load_model()
+2024-05-21 06:32:01,464:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:01,621:INFO:Initializing predict_model()
+2024-05-21 06:32:01,621:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1FF070>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:32:01,621:INFO:Checking exceptions
+2024-05-21 06:32:01,621:INFO:Preloading libraries
+2024-05-21 06:32:01,622:INFO:Set up data.
+2024-05-21 06:32:01,627:INFO:Set up index.
+2024-05-21 06:32:04,760:INFO:Initializing load_model()
+2024-05-21 06:32:04,761:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:04,930:INFO:Initializing predict_model()
+2024-05-21 06:32:04,931:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1F4E20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:32:04,931:INFO:Checking exceptions
+2024-05-21 06:32:04,931:INFO:Preloading libraries
+2024-05-21 06:32:04,931:INFO:Set up data.
+2024-05-21 06:32:04,936:INFO:Set up index.
+2024-05-21 06:32:08,077:INFO:Initializing load_model()
+2024-05-21 06:32:08,078:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:08,259:INFO:Initializing predict_model()
+2024-05-21 06:32:08,259:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:32:08,259:INFO:Checking exceptions
+2024-05-21 06:32:08,259:INFO:Preloading libraries
+2024-05-21 06:32:08,259:INFO:Set up data.
+2024-05-21 06:32:08,264:INFO:Set up index.
+2024-05-21 06:32:11,409:INFO:Initializing load_model()
+2024-05-21 06:32:11,409:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:11,556:INFO:Initializing predict_model()
+2024-05-21 06:32:11,556:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1F4E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:32:11,556:INFO:Checking exceptions
+2024-05-21 06:32:11,556:INFO:Preloading libraries
+2024-05-21 06:32:11,556:INFO:Set up data.
+2024-05-21 06:32:11,559:INFO:Set up index.
+2024-05-21 06:32:14,691:INFO:Initializing load_model()
+2024-05-21 06:32:14,691:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:14,853:INFO:Initializing predict_model()
+2024-05-21 06:32:14,853:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A358927F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:14,853:INFO:Checking exceptions
+2024-05-21 06:32:14,853:INFO:Preloading libraries
+2024-05-21 06:32:14,854:INFO:Set up data.
+2024-05-21 06:32:14,856:INFO:Set up index.
+2024-05-21 06:32:18,005:INFO:Initializing load_model()
+2024-05-21 06:32:18,006:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:18,201:INFO:Initializing predict_model()
+2024-05-21 06:32:18,201:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:18,201:INFO:Checking exceptions
+2024-05-21 06:32:18,201:INFO:Preloading libraries
+2024-05-21 06:32:18,201:INFO:Set up data.
+2024-05-21 06:32:18,206:INFO:Set up index.
+2024-05-21 06:32:21,326:INFO:Initializing load_model()
+2024-05-21 06:32:21,326:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:21,480:INFO:Initializing predict_model()
+2024-05-21 06:32:21,481:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:21,481:INFO:Checking exceptions
+2024-05-21 06:32:21,481:INFO:Preloading libraries
+2024-05-21 06:32:21,481:INFO:Set up data.
+2024-05-21 06:32:21,488:INFO:Set up index.
+2024-05-21 06:32:24,616:INFO:Initializing load_model()
+2024-05-21 06:32:24,616:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:24,765:INFO:Initializing predict_model()
+2024-05-21 06:32:24,766:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A358927F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:24,766:INFO:Checking exceptions
+2024-05-21 06:32:24,766:INFO:Preloading libraries
+2024-05-21 06:32:24,767:INFO:Set up data.
+2024-05-21 06:32:24,772:INFO:Set up index.
+2024-05-21 06:32:27,917:INFO:Initializing load_model()
+2024-05-21 06:32:27,917:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:28,130:INFO:Initializing predict_model()
+2024-05-21 06:32:28,131:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:28,131:INFO:Checking exceptions
+2024-05-21 06:32:28,131:INFO:Preloading libraries
+2024-05-21 06:32:28,132:INFO:Set up data.
+2024-05-21 06:32:28,134:INFO:Set up index.
+2024-05-21 06:32:31,271:INFO:Initializing load_model()
+2024-05-21 06:32:31,271:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:31,413:INFO:Initializing predict_model()
+2024-05-21 06:32:31,413:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:31,413:INFO:Checking exceptions
+2024-05-21 06:32:31,413:INFO:Preloading libraries
+2024-05-21 06:32:31,414:INFO:Set up data.
+2024-05-21 06:32:31,417:INFO:Set up index.
+2024-05-21 06:32:34,560:INFO:Initializing load_model()
+2024-05-21 06:32:34,560:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:34,708:INFO:Initializing predict_model()
+2024-05-21 06:32:34,708:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A358927F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:34,708:INFO:Checking exceptions
+2024-05-21 06:32:34,708:INFO:Preloading libraries
+2024-05-21 06:32:34,708:INFO:Set up data.
+2024-05-21 06:32:34,713:INFO:Set up index.
+2024-05-21 06:32:37,844:INFO:Initializing load_model()
+2024-05-21 06:32:37,845:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:38,009:INFO:Initializing predict_model()
+2024-05-21 06:32:38,009:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:38,009:INFO:Checking exceptions
+2024-05-21 06:32:38,009:INFO:Preloading libraries
+2024-05-21 06:32:38,010:INFO:Set up data.
+2024-05-21 06:32:38,016:INFO:Set up index.
+2024-05-21 06:32:41,176:INFO:Initializing load_model()
+2024-05-21 06:32:41,176:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:41,339:INFO:Initializing predict_model()
+2024-05-21 06:32:41,340:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A462C58E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:41,340:INFO:Checking exceptions
+2024-05-21 06:32:41,340:INFO:Preloading libraries
+2024-05-21 06:32:41,341:INFO:Set up data.
+2024-05-21 06:32:41,347:INFO:Set up index.
+2024-05-21 06:32:44,476:INFO:Initializing load_model()
+2024-05-21 06:32:44,476:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:44,638:INFO:Initializing predict_model()
+2024-05-21 06:32:44,638:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A3C200040>)
+2024-05-21 06:32:44,638:INFO:Checking exceptions
+2024-05-21 06:32:44,638:INFO:Preloading libraries
+2024-05-21 06:32:44,638:INFO:Set up data.
+2024-05-21 06:32:44,642:INFO:Set up index.
+2024-05-21 06:32:47,780:INFO:Initializing load_model()
+2024-05-21 06:32:47,781:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:47,932:INFO:Initializing predict_model()
+2024-05-21 06:32:47,932:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A358929A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:32:47,932:INFO:Checking exceptions
+2024-05-21 06:32:47,932:INFO:Preloading libraries
+2024-05-21 06:32:47,932:INFO:Set up data.
+2024-05-21 06:32:47,936:INFO:Set up index.
+2024-05-21 06:32:51,110:INFO:Initializing load_model()
+2024-05-21 06:32:51,110:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:51,275:INFO:Initializing predict_model()
+2024-05-21 06:32:51,276:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A462C58E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:32:51,276:INFO:Checking exceptions
+2024-05-21 06:32:51,276:INFO:Preloading libraries
+2024-05-21 06:32:51,277:INFO:Set up data.
+2024-05-21 06:32:51,282:INFO:Set up index.
+2024-05-21 06:32:54,407:INFO:Initializing load_model()
+2024-05-21 06:32:54,407:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:54,560:INFO:Initializing predict_model()
+2024-05-21 06:32:54,560:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:32:54,560:INFO:Checking exceptions
+2024-05-21 06:32:54,560:INFO:Preloading libraries
+2024-05-21 06:32:54,560:INFO:Set up data.
+2024-05-21 06:32:54,563:INFO:Set up index.
+2024-05-21 06:32:57,716:INFO:Initializing load_model()
+2024-05-21 06:32:57,716:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:32:57,854:INFO:Initializing predict_model()
+2024-05-21 06:32:57,854:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A358929A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:32:57,855:INFO:Checking exceptions
+2024-05-21 06:32:57,855:INFO:Preloading libraries
+2024-05-21 06:32:57,855:INFO:Set up data.
+2024-05-21 06:32:57,857:INFO:Set up index.
+2024-05-21 06:33:00,998:INFO:Initializing load_model()
+2024-05-21 06:33:00,999:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:01,169:INFO:Initializing predict_model()
+2024-05-21 06:33:01,169:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A462C58E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:33:01,169:INFO:Checking exceptions
+2024-05-21 06:33:01,169:INFO:Preloading libraries
+2024-05-21 06:33:01,169:INFO:Set up data.
+2024-05-21 06:33:01,172:INFO:Set up index.
+2024-05-21 06:33:04,303:INFO:Initializing load_model()
+2024-05-21 06:33:04,303:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:04,465:INFO:Initializing predict_model()
+2024-05-21 06:33:04,467:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1FF8B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462E3820>)
+2024-05-21 06:33:04,467:INFO:Checking exceptions
+2024-05-21 06:33:04,467:INFO:Preloading libraries
+2024-05-21 06:33:04,467:INFO:Set up data.
+2024-05-21 06:33:04,470:INFO:Set up index.
+2024-05-21 06:33:07,605:INFO:Initializing load_model()
+2024-05-21 06:33:07,605:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:07,774:INFO:Initializing predict_model()
+2024-05-21 06:33:07,774:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A35892790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:33:07,774:INFO:Checking exceptions
+2024-05-21 06:33:07,775:INFO:Preloading libraries
+2024-05-21 06:33:07,775:INFO:Set up data.
+2024-05-21 06:33:07,780:INFO:Set up index.
+2024-05-21 06:33:10,939:INFO:Initializing load_model()
+2024-05-21 06:33:10,939:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:11,109:INFO:Initializing predict_model()
+2024-05-21 06:33:11,109:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1FFEB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:33:11,109:INFO:Checking exceptions
+2024-05-21 06:33:11,109:INFO:Preloading libraries
+2024-05-21 06:33:11,109:INFO:Set up data.
+2024-05-21 06:33:11,111:INFO:Set up index.
+2024-05-21 06:33:14,238:INFO:Initializing load_model()
+2024-05-21 06:33:14,238:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:14,397:INFO:Initializing predict_model()
+2024-05-21 06:33:14,398:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A462D3610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:33:14,399:INFO:Checking exceptions
+2024-05-21 06:33:14,399:INFO:Preloading libraries
+2024-05-21 06:33:14,400:INFO:Set up data.
+2024-05-21 06:33:14,404:INFO:Set up index.
+2024-05-21 06:33:17,558:INFO:Initializing load_model()
+2024-05-21 06:33:17,558:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:33:17,699:INFO:Initializing predict_model()
+2024-05-21 06:33:17,699:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021A3C1F4E20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A462D61F0>)
+2024-05-21 06:33:17,699:INFO:Checking exceptions
+2024-05-21 06:33:17,699:INFO:Preloading libraries
+2024-05-21 06:33:17,700:INFO:Set up data.
+2024-05-21 06:33:17,703:INFO:Set up index.
+2024-05-21 06:34:33,363:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:34:33,363:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:34:33,363:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:34:33,363:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:34:33,610:INFO:Initializing load_model()
+2024-05-21 06:34:33,610:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:33,903:INFO:Initializing predict_model()
+2024-05-21 06:34:33,903:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028B36CA46D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B36CB0040>)
+2024-05-21 06:34:33,903:INFO:Checking exceptions
+2024-05-21 06:34:33,904:INFO:Preloading libraries
+2024-05-21 06:34:33,904:INFO:Set up data.
+2024-05-21 06:34:33,909:INFO:Set up index.
+2024-05-21 06:34:37,058:INFO:Initializing load_model()
+2024-05-21 06:34:37,058:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:37,222:INFO:Initializing predict_model()
+2024-05-21 06:34:37,222:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028A824D3370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B40D94820>)
+2024-05-21 06:34:37,222:INFO:Checking exceptions
+2024-05-21 06:34:37,222:INFO:Preloading libraries
+2024-05-21 06:34:37,222:INFO:Set up data.
+2024-05-21 06:34:37,224:INFO:Set up index.
+2024-05-21 06:34:40,376:INFO:Initializing load_model()
+2024-05-21 06:34:40,376:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:40,537:INFO:Initializing predict_model()
+2024-05-21 06:34:40,538:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028B36CA4E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B36CB0040>)
+2024-05-21 06:34:40,538:INFO:Checking exceptions
+2024-05-21 06:34:40,538:INFO:Preloading libraries
+2024-05-21 06:34:40,538:INFO:Set up data.
+2024-05-21 06:34:40,542:INFO:Set up index.
+2024-05-21 06:34:43,677:INFO:Initializing load_model()
+2024-05-21 06:34:43,677:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:43,823:INFO:Initializing predict_model()
+2024-05-21 06:34:43,823:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028B40D759A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B40D94820>)
+2024-05-21 06:34:43,823:INFO:Checking exceptions
+2024-05-21 06:34:43,823:INFO:Preloading libraries
+2024-05-21 06:34:43,823:INFO:Set up data.
+2024-05-21 06:34:43,826:INFO:Set up index.
+2024-05-21 06:34:46,979:INFO:Initializing load_model()
+2024-05-21 06:34:46,979:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:47,128:INFO:Initializing predict_model()
+2024-05-21 06:34:47,128:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028A824D3370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B36CB0040>)
+2024-05-21 06:34:47,128:INFO:Checking exceptions
+2024-05-21 06:34:47,128:INFO:Preloading libraries
+2024-05-21 06:34:47,128:INFO:Set up data.
+2024-05-21 06:34:47,131:INFO:Set up index.
+2024-05-21 06:34:50,272:INFO:Initializing load_model()
+2024-05-21 06:34:50,272:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:50,417:INFO:Initializing predict_model()
+2024-05-21 06:34:50,417:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028B40D84B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B40D94820>)
+2024-05-21 06:34:50,417:INFO:Checking exceptions
+2024-05-21 06:34:50,418:INFO:Preloading libraries
+2024-05-21 06:34:50,418:INFO:Set up data.
+2024-05-21 06:34:50,421:INFO:Set up index.
+2024-05-21 06:34:53,561:INFO:Initializing load_model()
+2024-05-21 06:34:53,561:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:34:53,710:INFO:Initializing predict_model()
+2024-05-21 06:34:53,710:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028B40D75940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028B40D94820>)
+2024-05-21 06:34:53,710:INFO:Checking exceptions
+2024-05-21 06:34:53,710:INFO:Preloading libraries
+2024-05-21 06:34:53,710:INFO:Set up data.
+2024-05-21 06:34:53,712:INFO:Set up index.
+2024-05-21 06:35:25,282:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:35:25,282:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:35:25,282:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:35:25,282:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:35:39,863:INFO:Initializing load_model()
+2024-05-21 06:35:39,863:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:40,680:INFO:Initializing predict_model()
+2024-05-21 06:35:40,680:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EABB3A46D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EABB3B0040>)
+2024-05-21 06:35:40,680:INFO:Checking exceptions
+2024-05-21 06:35:40,680:INFO:Preloading libraries
+2024-05-21 06:35:40,681:INFO:Set up data.
+2024-05-21 06:35:40,689:INFO:Set up index.
+2024-05-21 06:35:43,968:INFO:Initializing load_model()
+2024-05-21 06:35:43,968:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:44,426:INFO:Initializing predict_model()
+2024-05-21 06:35:44,428:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EA26BE3370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:35:44,428:INFO:Checking exceptions
+2024-05-21 06:35:44,428:INFO:Preloading libraries
+2024-05-21 06:35:44,429:INFO:Set up data.
+2024-05-21 06:35:44,437:INFO:Set up index.
+2024-05-21 06:35:47,687:INFO:Initializing load_model()
+2024-05-21 06:35:47,688:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:48,155:INFO:Initializing predict_model()
+2024-05-21 06:35:48,155:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EABB3A46A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EABB3B0040>)
+2024-05-21 06:35:48,155:INFO:Checking exceptions
+2024-05-21 06:35:48,156:INFO:Preloading libraries
+2024-05-21 06:35:48,156:INFO:Set up data.
+2024-05-21 06:35:48,159:INFO:Set up index.
+2024-05-21 06:35:51,452:INFO:Initializing load_model()
+2024-05-21 06:35:51,453:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:51,923:INFO:Initializing predict_model()
+2024-05-21 06:35:51,924:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EA28683820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:35:51,924:INFO:Checking exceptions
+2024-05-21 06:35:51,924:INFO:Preloading libraries
+2024-05-21 06:35:51,925:INFO:Set up data.
+2024-05-21 06:35:51,932:INFO:Set up index.
+2024-05-21 06:35:55,175:INFO:Initializing load_model()
+2024-05-21 06:35:55,175:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:55,645:INFO:Initializing predict_model()
+2024-05-21 06:35:55,645:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAB4A52640>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EABB3B0040>)
+2024-05-21 06:35:55,645:INFO:Checking exceptions
+2024-05-21 06:35:55,646:INFO:Preloading libraries
+2024-05-21 06:35:55,647:INFO:Set up data.
+2024-05-21 06:35:55,672:INFO:Set up index.
+2024-05-21 06:35:58,874:INFO:Initializing load_model()
+2024-05-21 06:35:58,875:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:35:59,277:INFO:Initializing predict_model()
+2024-05-21 06:35:59,277:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EABB3A4E80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:35:59,277:INFO:Checking exceptions
+2024-05-21 06:35:59,277:INFO:Preloading libraries
+2024-05-21 06:35:59,278:INFO:Set up data.
+2024-05-21 06:35:59,286:INFO:Set up index.
+2024-05-21 06:36:02,496:INFO:Initializing load_model()
+2024-05-21 06:36:02,496:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:36:02,926:INFO:Initializing predict_model()
+2024-05-21 06:36:02,927:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAC5475880>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EABB3B0040>)
+2024-05-21 06:36:02,927:INFO:Checking exceptions
+2024-05-21 06:36:02,927:INFO:Preloading libraries
+2024-05-21 06:36:02,927:INFO:Set up data.
+2024-05-21 06:36:02,934:INFO:Set up index.
+2024-05-21 06:36:06,168:INFO:Initializing load_model()
+2024-05-21 06:36:06,169:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:36:06,636:INFO:Initializing predict_model()
+2024-05-21 06:36:06,637:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAB4A52820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:36:06,637:INFO:Checking exceptions
+2024-05-21 06:36:06,637:INFO:Preloading libraries
+2024-05-21 06:36:06,638:INFO:Set up data.
+2024-05-21 06:36:06,645:INFO:Set up index.
+2024-05-21 06:36:09,908:INFO:Initializing load_model()
+2024-05-21 06:36:09,908:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:36:10,404:INFO:Initializing predict_model()
+2024-05-21 06:36:10,404:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAC5484640>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:36:10,405:INFO:Checking exceptions
+2024-05-21 06:36:10,405:INFO:Preloading libraries
+2024-05-21 06:36:10,406:INFO:Set up data.
+2024-05-21 06:36:10,413:INFO:Set up index.
+2024-05-21 06:36:13,669:INFO:Initializing load_model()
+2024-05-21 06:36:13,670:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:36:14,094:INFO:Initializing predict_model()
+2024-05-21 06:36:14,094:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAC5475910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EABB3B0040>)
+2024-05-21 06:36:14,095:INFO:Checking exceptions
+2024-05-21 06:36:14,095:INFO:Preloading libraries
+2024-05-21 06:36:14,096:INFO:Set up data.
+2024-05-21 06:36:14,106:INFO:Set up index.
+2024-05-21 06:36:17,326:INFO:Initializing load_model()
+2024-05-21 06:36:17,326:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:36:17,561:INFO:Initializing predict_model()
+2024-05-21 06:36:17,561:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EAB4A527C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EAC5493820>)
+2024-05-21 06:36:17,561:INFO:Checking exceptions
+2024-05-21 06:36:17,561:INFO:Preloading libraries
+2024-05-21 06:36:17,561:INFO:Set up data.
+2024-05-21 06:36:17,563:INFO:Set up index.
+2024-05-21 06:36:24,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:36:24,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:36:24,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:36:24,744:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:37:04,395:INFO:Initializing load_model()
+2024-05-21 06:37:04,395:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:37:04,642:INFO:Initializing predict_model()
+2024-05-21 06:37:04,642:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000018A3EAE2370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018ABB2E0040>)
+2024-05-21 06:37:04,642:INFO:Checking exceptions
+2024-05-21 06:37:04,642:INFO:Preloading libraries
+2024-05-21 06:37:04,642:INFO:Set up data.
+2024-05-21 06:37:04,644:INFO:Set up index.
+2024-05-21 06:37:24,021:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:37:24,021:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:37:24,021:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:37:24,021:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:37:49,412:INFO:Initializing load_model()
+2024-05-21 06:37:49,412:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:37:49,684:INFO:Initializing predict_model()
+2024-05-21 06:37:49,685:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002AFF0A23370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B03D200040>)
+2024-05-21 06:37:49,685:INFO:Checking exceptions
+2024-05-21 06:37:49,685:INFO:Preloading libraries
+2024-05-21 06:37:49,685:INFO:Set up data.
+2024-05-21 06:37:49,689:INFO:Set up index.
+2024-05-21 06:38:51,004:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:38:51,004:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:38:51,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:38:51,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:38:51,263:INFO:Initializing load_model()
+2024-05-21 06:38:51,263:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:38:51,572:INFO:Initializing predict_model()
+2024-05-21 06:38:51,572:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000218B89646D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000218B8970040>)
+2024-05-21 06:38:51,572:INFO:Checking exceptions
+2024-05-21 06:38:51,572:INFO:Preloading libraries
+2024-05-21 06:38:51,572:INFO:Set up data.
+2024-05-21 06:38:51,577:INFO:Set up index.
+2024-05-21 06:39:19,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:39:19,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:39:19,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:39:19,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:39:36,283:INFO:Initializing load_model()
+2024-05-21 06:39:36,283:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:39:36,576:INFO:Initializing predict_model()
+2024-05-21 06:39:36,577:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CBBCAC46D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CBBCAD0040>)
+2024-05-21 06:39:36,577:INFO:Checking exceptions
+2024-05-21 06:39:36,577:INFO:Preloading libraries
+2024-05-21 06:39:36,577:INFO:Set up data.
+2024-05-21 06:39:36,583:INFO:Set up index.
+2024-05-21 06:39:39,716:INFO:Initializing load_model()
+2024-05-21 06:39:39,716:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:39:39,879:INFO:Initializing predict_model()
+2024-05-21 06:39:39,879:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CB082F2370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CBBCAD0040>)
+2024-05-21 06:39:39,879:INFO:Checking exceptions
+2024-05-21 06:39:39,879:INFO:Preloading libraries
+2024-05-21 06:39:39,880:INFO:Set up data.
+2024-05-21 06:39:39,884:INFO:Set up index.
+2024-05-21 06:39:43,012:INFO:Initializing load_model()
+2024-05-21 06:39:43,012:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:39:43,179:INFO:Initializing predict_model()
+2024-05-21 06:39:43,179:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CB09D82850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CBBCAD0040>)
+2024-05-21 06:39:43,179:INFO:Checking exceptions
+2024-05-21 06:39:43,179:INFO:Preloading libraries
+2024-05-21 06:39:43,179:INFO:Set up data.
+2024-05-21 06:39:43,183:INFO:Set up index.
+2024-05-21 06:39:46,309:INFO:Initializing load_model()
+2024-05-21 06:39:46,309:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:39:46,503:INFO:Initializing predict_model()
+2024-05-21 06:39:46,503:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CBB5BD9F10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CBBCAD0040>)
+2024-05-21 06:39:46,504:INFO:Checking exceptions
+2024-05-21 06:39:46,504:INFO:Preloading libraries
+2024-05-21 06:39:46,504:INFO:Set up data.
+2024-05-21 06:39:46,507:INFO:Set up index.
+2024-05-21 06:45:33,145:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:45:33,145:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:45:33,145:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:45:33,145:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:45:33,425:INFO:Initializing load_model()
+2024-05-21 06:45:33,425:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:45:33,755:INFO:Initializing predict_model()
+2024-05-21 06:45:33,756:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002B8E94F3370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B935CD0040>)
+2024-05-21 06:45:33,756:INFO:Checking exceptions
+2024-05-21 06:45:33,756:INFO:Preloading libraries
+2024-05-21 06:45:33,757:INFO:Set up data.
+2024-05-21 06:45:33,760:INFO:Set up index.
+2024-05-21 06:47:04,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:04,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:04,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:04,749:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:05,040:INFO:Initializing load_model()
+2024-05-21 06:47:05,040:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:47:05,374:INFO:Initializing predict_model()
+2024-05-21 06:47:05,374:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002542C5D3370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000254B8DD0040>)
+2024-05-21 06:47:05,374:INFO:Checking exceptions
+2024-05-21 06:47:05,374:INFO:Preloading libraries
+2024-05-21 06:47:05,374:INFO:Set up data.
+2024-05-21 06:47:05,378:INFO:Set up index.
+2024-05-21 06:47:35,990:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:35,990:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:35,990:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:35,990:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-21 06:47:50,063:INFO:Initializing load_model()
+2024-05-21 06:47:50,064:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:47:50,386:INFO:Initializing predict_model()
+2024-05-21 06:47:50,386:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CBB253820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CBB260040>)
+2024-05-21 06:47:50,387:INFO:Checking exceptions
+2024-05-21 06:47:50,387:INFO:Preloading libraries
+2024-05-21 06:47:50,387:INFO:Set up data.
+2024-05-21 06:47:50,389:INFO:Set up index.
+2024-05-21 06:47:53,566:INFO:Initializing load_model()
+2024-05-21 06:47:53,566:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:47:53,729:INFO:Initializing predict_model()
+2024-05-21 06:47:53,729:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CB43280D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CBB260040>)
+2024-05-21 06:47:53,730:INFO:Checking exceptions
+2024-05-21 06:47:53,730:INFO:Preloading libraries
+2024-05-21 06:47:53,731:INFO:Set up data.
+2024-05-21 06:47:53,734:INFO:Set up index.
+2024-05-21 06:47:56,859:INFO:Initializing load_model()
+2024-05-21 06:47:56,859:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:47:57,046:INFO:Initializing predict_model()
+2024-05-21 06:47:57,047:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CBB2537F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CBB260040>)
+2024-05-21 06:47:57,047:INFO:Checking exceptions
+2024-05-21 06:47:57,047:INFO:Preloading libraries
+2024-05-21 06:47:57,048:INFO:Set up data.
+2024-05-21 06:47:57,051:INFO:Set up index.
+2024-05-21 06:48:00,196:INFO:Initializing load_model()
+2024-05-21 06:48:00,196:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:48:00,388:INFO:Initializing predict_model()
+2024-05-21 06:48:00,388:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CB48F1B80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CBB260040>)
+2024-05-21 06:48:00,388:INFO:Checking exceptions
+2024-05-21 06:48:00,388:INFO:Preloading libraries
+2024-05-21 06:48:00,388:INFO:Set up data.
+2024-05-21 06:48:00,390:INFO:Set up index.
+2024-05-21 06:48:03,567:INFO:Initializing load_model()
+2024-05-21 06:48:03,567:INFO:load_model(model_name=model_et, platform=None, authentication=None, verbose=True)
+2024-05-21 06:48:03,957:INFO:Initializing predict_model()
+2024-05-21 06:48:03,957:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CBB253820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['volume', 'lowPrice', 'highPrice',
+                                             'count', 'openPrice'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CC53371F0>)
+2024-05-21 06:48:03,957:INFO:Checking exceptions
+2024-05-21 06:48:03,957:INFO:Preloading libraries
+2024-05-21 06:48:03,959:INFO:Set up data.
+2024-05-21 06:48:03,965:INFO:Set up index.
