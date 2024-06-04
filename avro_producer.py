@@ -160,7 +160,7 @@ def main(args):
                              value=avro_serializer(user, SerializationContext(topic, MessageField.VALUE)),
                              on_delivery=delivery_report)
         
-        sleep(5)
+        sleep(3)
         producer.poll(0.0)
         
     print("\nFlushing records...")

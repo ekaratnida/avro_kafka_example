@@ -30,6 +30,14 @@ import pandas as pd
 from pycaret.regression import load_model, predict_model
 from sklearn.metrics import mean_squared_error
 
+from river import linear_model
+from river import tree
+#model = linear_model.LinearRegression()
+model = tree.HoeffdingTreeRegressor(
+        grace_period=100,
+        model_selector_decay=0.9
+    )
+
 class User(object):
     """
     User record
@@ -109,7 +117,7 @@ def main(args):
 
     consumer_conf = {'bootstrap.servers': args.bootstrap_servers,
                      'group.id': args.group,
-                     'auto.offset.reset': "earliest"}
+                     'auto.offset.reset': "latest"}
 
     consumer = Consumer(consumer_conf)
     consumer.subscribe([topic])
@@ -155,9 +163,16 @@ def main(args):
           
             saved_lr = load_model('model_et')
             predictions = predict_model(saved_lr, data=df)
+            
             #print(type(predictions))
             print("Predicted", predictions.iloc[0]['prediction_label']," VS Actual=",user.lastPrice)
             print(mean_squared_error([user.lastPrice] , [predictions.iloc[0]['prediction_label']] ) )
+
+            y_pred = model.predict_one(data)
+            model.learn_one(data, user.lastPrice)
+            print("y_pred = ",y_pred)
+
+
 
         except KeyboardInterrupt:
             break
@@ -183,5 +198,5 @@ if __name__ == '__main__':
     main(parser.parse_args())
 
 
-#Example
+# Example
 # python avro_consumer.py -b "localhost:9092" -s "http://localhost:8081" -t "BTCUSDT" -g "btc"
